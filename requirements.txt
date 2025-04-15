@@ -2,3 +2,7 @@ mne>=1.4.2
 numpy>=1.22
 scipy>=1.10
 matplotlib>=3.7
+joblib>=1.2
+scikit-learn>=1.3
+imblearn>=0.11
+eeglib>=2.2.1
