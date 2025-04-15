@@ -3,25 +3,37 @@ This repository provides a modular EEG preprocessing pipeline for experiments us
 
 # Structure
 
-eeg-preprocessing-pipeline/ \n
-├── preprocess_all.py              # Main script to run the pipeline
+eeg-preprocessing-pipeline/ 
+
+├── preprocess_all.py              # Main script to run the pipeline 
+
 ├── requirements.txt               # Required Python packages
+
 ├── README.md                      # Project documentation
+
 ├── scripts/
+
 │   ├── filter.py                  # Filtering and CAR
+
 │   ├── remove_bad_channels.py     # Bad channel detection
+
 │   ├── to_fif.py                  # ICA training and saving
+
 │   ├── apply_ica.py               # ICA application with flat-channel fix
+
 │   ├── epochs_reject.py           # Epoching with fallback strategies
+
 │   └── segmentation_autoreject.py # (Optional) AutoReject-based segmentation
+
 ├── data/
+
 │   └── README.md                  # Instructions for dataset placement
 
 # How It Works
 
 1. Filter and CAR
 
-from scripts.filter import filter
+  from scripts.filter import filter
 
 Bandpass filtering [0.1, 30 Hz]
 
@@ -63,7 +75,7 @@ Iterates through subject/session/trial folders
 
 Skips steps if intermediate files already exist
 
-📦 Requirements
+# Requirements
 
 Install with:
 
@@ -79,12 +91,12 @@ Example:
 
 sub4_res/trial1/zeroBACK/zeroBACK.set
 
-🛠️ Optional Features
+# Optional Features
 
 AutoReject-based cleaning (segmentation_autoreject.py)
 
 Drop log plotting for manual inspection
 
-✍️ Author
+# Author
 
 Adapted for modular usage by Lydia Exarchou. Based on EEG data cleaning routines using MNE-Python.
