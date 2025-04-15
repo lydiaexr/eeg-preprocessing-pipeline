@@ -1,9 +1,9 @@
 # eeg-preprocessing-pipeline
 This repository provides a modular EEG preprocessing pipeline for experiments using raw EEG data (e.g., in .set format from EEGLAB). It performs filtering, bad channel detection, ICA artifact correction, and epoching, with flexible options for AutoReject.
 
-#Structure
+# Structure
 
-eeg-preprocessing-pipeline/
+eeg-preprocessing-pipeline/ \n
 ├── preprocess_all.py              # Main script to run the pipeline
 ├── requirements.txt               # Required Python packages
 ├── README.md                      # Project documentation
@@ -17,7 +17,7 @@ eeg-preprocessing-pipeline/
 ├── data/
 │   └── README.md                  # Instructions for dataset placement
 
-⚙️ How It Works
+# How It Works
 
 1. Filter and CAR
 
